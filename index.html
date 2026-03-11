@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzles & Games Studio | Admin Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfaf7; /* Soft paper-like cream */
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            background-attachment: fixed;
+        }
+        .studio-card {
+            background-color: #ffffff;
+            border: 1px solid #e8e4db;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .studio-card:hover {
+            box-shadow: 0 4px 12px rgba(183, 175, 158, 0.15);
+        }
+        .sidebar-active {
+            background-color: #fcf8f2;
+            color: #f26522;
+            border-right: 3px solid #f26522;
+        }
+        /* Restricted Vivid Accents: Category Chips */
+        .chip-geography { background-color: #0071bc; color: white; }
+        .chip-entertainment { background-color: #ed1c24; color: white; }
+        .chip-history { background-color: #fff200; color: #333; }
+        .chip-arts { background-color: #9C27B0; color: white; }
+        .chip-science { background-color: #39b54a; color: white; }
+        .chip-sports { background-color: #f26522; color: white; }
+
+        /* Scrollbar customization */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #dcd7ce; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #cbbfa9; }
+
+        input, textarea, select {
+            border-color: #e8e4db !important;
+        }
+        input:focus, textarea:focus, select:focus {
+            ring-color: #f26522 !important;
+            border-color: #f26522 !important;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="text-slate-700 antialiased">
+    <div id="root"></div>
+</body>
+</html>
